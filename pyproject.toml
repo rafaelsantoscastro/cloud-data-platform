@@ -1,10 +1,32 @@
-Adicionar:
 [project]
-name = "cloud-data-platform-sprint1"
+name = "cloud-data-platform"
 version = "0.1.0"
-description = "Projeto de estudo de Engenharia de Dados e Software"
+description = "Cloud Data Platform for Software Engineering and Data Engineering studies."
+readme = "README.md"
 requires-python = ">=3.11"
 
 authors = [
     { name = "Rafael Santos Castro" }
+]
+
+[dependency-groups]
+dev = [
+    "ruff",
+    "black"
+]
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.black]
+line-length = 88
+target-version = ["py311"]
+
+[tool.pytest.ini_options]
+pythonpath = [
+    "src"
 ]
