@@ -1,0 +1,10 @@
+Adicionar:
+[project]
+name = "cloud-data-platform-sprint1"
+version = "0.1.0"
+description = "Projeto de estudo de Engenharia de Dados e Software"
+requires-python = ">=3.11"
+
+authors = [
+    { name = "Rafael Santos Castro" }
+]
